@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = "eloyesp@gmail.com"
   spec.description   = %q{Use SalesForce as an ActiveModel}
   spec.summary       = %q{Help you implement models persisting on Sales Force within Rails using RESTForce}
-  spec.homepage      = "https://github.com/ionia-corporation/active_force"
+  spec.homepage      = "https://github.com/rhetprieto/active_force"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -21,8 +21,8 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = '>= 1.9.3'
 
   spec.add_dependency 'active_attr', '~> 0.8'
-  spec.add_dependency 'restforce',   '~> 1.4'
-  spec.add_development_dependency 'bundler', '~> 1.3'
+  spec.add_dependency 'restforce',   '~> 2.5.1'
+  spec.add_development_dependency 'bundler', '>= 0'
   spec.add_development_dependency 'rake', '>= 0'
   spec.add_development_dependency 'rspec', '>= 0'
   spec.add_development_dependency 'pry', '>= 0'
