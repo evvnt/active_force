@@ -11,8 +11,8 @@ module ActiveAttr
       def attribute!(name, options={})
         super(name, options)
         define_method("#{name}=") do |value|
-          send("#{name}_will_change!") unless value == read_attribute(name)
           super(value)
+          send("#{name}_will_change!") unless attributes[name].present? && value == attributes[name]
         end
       end
     end
